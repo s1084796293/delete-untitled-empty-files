@@ -1,0 +1,11 @@
+{
+	"id": "delete-untitled-empty-files",
+	"name": "DeleteUntitledEmptyFiles",
+	"version": "1.0.0",
+	"minAppVersion": "0.0.0",
+	"description": "删除标题为untitled的空文件",
+	"author": "Obsidian",
+	"authorUrl": "https://obsidian.md",
+	"fundingUrl": "https://obsidian.md/pricing",
+	"isDesktopOnly": false
+}
