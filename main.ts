@@ -1,4 +1,4 @@
-import { App, Plugin, TFile, Notice } from 'obsidian';
+import {  Plugin, TFile, Notice } from 'obsidian';
 
 export default class DeleteUntitledEmptyFilesPlugin extends Plugin {
 
@@ -44,7 +44,7 @@ export default class DeleteUntitledEmptyFilesPlugin extends Plugin {
 	 * @returns true: 如果符合 "Untitled" 或 "Untitled *" 格式, false: 否则
 	 */
 	private isUntitledPattern(fileName: string): boolean {
-		const regex = /^Untitled(\s\d+)?\.md$/;  // 匹配 "Untitled" 或 "Untitled [数字]"
+		const regex = /^(Untitled|未命名)(\s\d+)?\.md$/;
 		return regex.test(fileName);
 	}
 
